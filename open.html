@@ -34,7 +34,7 @@
     <section class="hero">
       <img class="app-icon" src="app_icon.png" alt="Pulselyzer">
       <h1>Pulselyzer</h1>
-      <p>Pulselyzer aciliyor. Uygulama acilmazsa asagidaki butonlari kullanabilirsiniz.</p>
+      <p>Pulselyzer aciliyor. Uygulama cihazinizda yoksa Google Play sayfasina yonlendirilirsiniz.</p>
       <p class="actions">
         <a id="open-app" class="button" href="pulselyzer://open">Uygulamayi Ac</a>
         <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.pulselyzer.mobile">Google Play</a>
@@ -45,12 +45,18 @@
     (function () {
       var query = window.location.search || '';
       var appUrl = 'pulselyzer://open' + query;
+      var fallbackUrl = 'https://play.google.com/store/apps/details?id=com.pulselyzer.mobile';
+      var intentUrl =
+        'intent://open' + query +
+        '#Intent;scheme=pulselyzer;package=com.pulselyzer.mobile;' +
+        'S.browser_fallback_url=' + encodeURIComponent(fallbackUrl) +
+        ';end';
       var openButton = document.getElementById('open-app');
-      openButton.href = appUrl;
+      openButton.href = /Android/i.test(navigator.userAgent) ? intentUrl : appUrl;
 
       if (/Android/i.test(navigator.userAgent)) {
         window.setTimeout(function () {
-          window.location.href = appUrl;
+          window.location.href = intentUrl;
         }, 250);
       }
     }());
