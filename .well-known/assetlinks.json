@@ -8,7 +8,8 @@
       "namespace": "android_app",
       "package_name": "com.pulselyzer.mobile",
       "sha256_cert_fingerprints": [
-        "EC:12:1A:74:71:19:8E:F2:79:E5:9F:FC:E4:21:34:35:C5:6E:8E:89:98:90:D4:63:81:EE:C8:D5:02:F1:D5:F0"
+        "EC:12:1A:74:71:19:8E:F2:79:E5:9F:FC:E4:21:34:35:C5:6E:8E:89:98:90:D4:63:81:EE:C8:D5:02:F1:D5:F0",
+        "3A:BA:1B:A3:E8:57:D7:B4:D7:A4:C9:C1:2B:F3:BD:93:F0:C8:C1:D7:11:5B:1F:E1:18:D6:43:8B:72:FB:D4:0B"
       ]
     }
   }
