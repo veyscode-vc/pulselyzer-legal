@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pulselyzer.mobile",
+      "sha256_cert_fingerprints": [
+        "EC:12:1A:74:71:19:8E:F2:79:E5:9F:FC:E4:21:34:35:C5:6E:8E:89:98:90:D4:63:81:EE:C8:D5:02:F1:D5:F0"
+      ]
+    }
+  }
+]
