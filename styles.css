@@ -91,6 +91,39 @@ body {
   line-height: 1.7;
 }
 
+.app-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px !important;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 12px;
+  color: #07101d;
+  background: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button.secondary {
+  color: var(--text);
+  background: rgba(132, 184, 255, 0.12);
+  border: 1px solid var(--border);
+}
+
 .panel {
   padding: 24px 22px;
 }
